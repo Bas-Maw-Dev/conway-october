@@ -49,6 +49,13 @@ describe "how to calculate number of live neighbours in a conway grid" do
     number_of_neighbours = number_of_living_neigbours(three_by_one_grid,row: 0,column: 0)
     expect(number_of_neighbours).to eq 1
   end
+
+  it 'should tell me there are no neighbours if no neighbours in a 3x1 grid' do
+    three_by_one_grid = [:empty, :empty, :alive]
+    number_of_neighbours = number_of_living_neigbours(three_by_one_grid,row: 0,column: 0)
+    expect(number_of_neighbours).to eq 0
+
+  end
 end
 
 def view_next_conway_generation(generation)
@@ -75,9 +82,4 @@ def number_of_living_neigbours(grid,row:,column:)
   number_of_neighbours += 1
    
   number_of_neighbours
-  
-elsif 
-  
-end  
-   
 end
