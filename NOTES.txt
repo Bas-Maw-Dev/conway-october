@@ -1,0 +1,13 @@
+// Creates a grid with hashes for each row
+grid_size = 10
+grid = {}
+grid_size.times do |row|
+  column = []
+  grid_size.times do |cell|
+    column << (cell+1)
+  end
+  row_text = (row + 1)
+  grid[row_text] = column
+end
+
+puts grid
