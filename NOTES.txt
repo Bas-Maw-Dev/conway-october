@@ -1,3 +1,17 @@
+
+02-nov-22
+Pretty much wasted about half a day tring to see how to convert arrays of symbols
+into arrays of strings. I gave up and converted everything to a string, now it passes.
+I am convinced the binary options 1 and 0 would be quicker even if put intoa a hash:
+e.g.
+
+cell = {
+  alive: 1,
+  dead: 0
+}
+This would still make it readable for the stakeholders but quicker in production if needed.
+
+
 // Creates a grid with hashes for each row
 grid_size = 10
 grid = {}
